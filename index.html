@@ -299,18 +299,19 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .g-item.show .g-over{opacity:1}
 .g-item.show img{transform:scale(1.08)}
 .g-item{cursor:pointer;-webkit-tap-highlight-color:transparent}
+  
 @media(max-width:768px){
   .sticky-book{
-    display:flex;position:fixed;left:0;right:0;bottom:0;z-index:890;
-    align-items:center;justify-content:space-between;gap:1rem;
-    width:100%;box-sizing:border-box;
-    padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));
-    background:var(--primary-dark);color:#fff;font-size:.9rem;
+    display:block;position:fixed;z-index:890;
+    left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom));
+    background:none;padding:0;width:auto;
   }
-  .sticky-book span{flex:1;min-width:0}
-  .sticky-book .btn{padding:.65rem 1.4rem;white-space:nowrap}
-  body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
-  .wa-float{bottom:calc(5rem + env(safe-area-inset-bottom))}
+  .sticky-book .btn{
+    padding:.85rem 1.8rem;border-radius:50px;
+    box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:.95rem;
+  }
+  .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
+  .footer{padding-bottom:6rem}
 }
 
 </style>
@@ -568,9 +569,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 </footer>
 
 <a href="https://wa.me/9419634196" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-<div class="sticky-book"><span></span><a href="#contact" class="btn btn-primary">Book Now</a></div>
-<div class="toast" id="toast" role="status"></div>
-
+<div class="sticky-book"><a href="#contact" class="btn btn-primary">Book Now</a></div><div class="toast" id="toast" role="status"></div>
 <script>
 // header state
 const navbar=document.getElementById('navbar');
