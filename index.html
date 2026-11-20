@@ -247,7 +247,8 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .wa-float{position:fixed;right:1.2rem;bottom:1.2rem;z-index:900;width:54px;height:54px;border-radius:50%;background:#1f8f4e;color:#fff;font-size:1.7rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-md)}
 .sticky-book{display:none}
 .toast{position:fixed;left:50%;bottom:1.5rem;transform:translate(-50%,150%);background:var(--primary);color:#fff;padding:.9rem 1.4rem;border-radius:var(--r-md);box-shadow:var(--sh-lg);z-index:2000;transition:var(--t);max-width:90vw;font-size:.9rem}
-.toast.show{transform:translate(-50%,0)}
+.toast{visibility:hidden;opacity:0}
+.toast.show{transform:translate(-50%,0);visibility:visible;opacity:1}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.25,1,.5,1),transform .8s cubic-bezier(.25,1,.5,1)}
@@ -387,7 +388,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
       <p class="desc">Enjoy hot single-origin coffee on your balcony in the morning, and look up at the clear Milky Way sky with the naked eye at night.</p>
       <div class="features">
         <div class="feature"><i class="fa-solid fa-leaf"></i><div><h4>Eco-conscious</h4><p>Solar-assisted, no single-use plastics, organic grounds.</p></div></div>
-        <div class="feature"><i class="fa-solid fa-utensils"></i><div><h4>Fresh Homemade Food</h4><p>Hearty, comforting meals prepared fresh in our kitchen to keep you warm and energized.</p></div></div>
+        <div class="feature"><i class="fa-solid fa-utensils"></i><div><h4>Homemade Food</h4><p>Hearty, comforting meals prepared fresh in our kitchen to keep you warm and energized.</p></div></div>
         <div class="feature"><i class="fa-solid fa-shield-halved"></i><div><h4>Private and serene</h4><p>Gated property with restricted entry for your peace.</p></div></div>
         <div class="feature"><i class="fa-solid fa-bell-concierge"></i><div><h4>Personal care</h4><p>Warm hosts who look after your wellbeing.</p></div></div>
       </div>
@@ -553,9 +554,6 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 
     <div class="f-bottom">
       <div>&copy; <span id="yr">2026</span> Vajra Homestay. All rights reserved.</div>
-      <div class="social">
-        <a href="#" aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
-      </div>
     </div>
   </div>
 </footer>
