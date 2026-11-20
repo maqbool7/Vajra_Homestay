@@ -298,6 +298,17 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   .hero{min-height:88svh}
   .hero-video{object-position:35% center}
 }
+/* touch screens: no hover, so always show the caption */
+@media (hover:none){
+  .g-over{
+    opacity:1;
+    justify-content:flex-end;
+    background:linear-gradient(transparent 50%,rgba(10,20,15,.85));
+    padding:1rem;
+  }
+  .g-over h5{font-size:1rem}
+}
+
 </style>
 </style>
 </head>
