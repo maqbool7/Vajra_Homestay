@@ -19,8 +19,7 @@
 <style>
 :root{--primary:#182c23;--primary-light:#244235;--primary-dark:#0f1c16;--accent:#c49a6c;--accent-hover:#b08557;--accent-soft:#f4ece4;--bg:#faf7f2;--surface:#fff;--text:#222925;--muted:#5b665f;--border:rgba(24,44,35,.1);--r-sm:4px;--r-md:8px;--r-lg:14px;--sh-sm:0 4px 12px rgba(0,0,0,.05);--sh-md:0 12px 30px rgba(0,0,0,.09);--sh-lg:0 24px 60px rgba(0,0,0,.14);--t:all .35s cubic-bezier(.25,1,.5,1);--serif:'Playfair Display',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-html{background:var(--primary-dark)}
-html{scroll-behavior:smooth;scroll-padding-top:80px}html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{background:var(--primary-dark);scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{text-decoration:none;color:inherit;transition:var(--t)}
@@ -59,6 +58,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 .scrim{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:var(--t);z-index:1000}
 .scrim.open{opacity:1;pointer-events:auto}
 .close-btn{position:absolute;top:1.4rem;right:1.4rem;background:none;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
+.mobile-nav .mobile-book{color:#1a1208;font-family:var(--sans);font-size:1rem;margin-top:.6rem}
 
 /* hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--primary-dark);padding:8rem 0 8rem;color:#fff}
@@ -221,6 +221,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .f-map iframe{width:100%;height:100%;border:0}
 .map-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:.9rem;color:var(--accent);font-weight:600;font-size:.88rem}
 .map-link:hover{color:#fff}
+.footer-book{margin-top:1.4rem}
 
 /* day at vajra */
 .day{padding:6.5rem 0 7rem;background:var(--primary);color:#fff}
@@ -301,19 +302,14 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .g-item.show img{transform:scale(1.08)}
 .g-item{cursor:pointer;-webkit-tap-highlight-color:transparent}
   
+.wa-float,.sticky-book{transition:opacity .3s}
 @media(max-width:768px){
-  .sticky-book{
-    display:block;position:fixed;z-index:890;
-    left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom));
-    background:none;padding:0;width:auto;
-  }
-  .sticky-book .btn{
-    padding:.85rem 1.8rem;border-radius:50px;
-    box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:.95rem;
-  }
+  .sticky-book{display:block;position:fixed;z-index:890;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom))}
+  .sticky-book .btn{padding:.85rem 1.8rem;border-radius:50px;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:.95rem}
   .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
-  .footer{6rem}
+  .footer{padding-bottom:calc(3rem + env(safe-area-inset-bottom))}
 }
+</style>
 
 </style>
 </style>
@@ -349,6 +345,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   <a href="#gallery">Gallery</a>
   <a href="#experiences">Experiences</a>
   <a href="#contact">Contact</a>
+  <a href="https://wa.me/919419634196?text=Hello%20Vajra%2C%20I%27d%20like%20to%20book%20a%20room." class="btn btn-primary mobile-book" target="_blank" rel="noopener">Book Now</a>
 </nav>
 
 <section class="hero" id="home">
@@ -526,13 +523,14 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
       <div>
         <div class="logo"><span class="logo-main" style="font-size:1.8rem">VAJRA</span><span class="logo-tag">Homestay Hanle</span></div>
         <p class="f-desc">A sanctuary for mindful journeys, authentic culture and timeless architecture.</p>
+        <a href="https://wa.me/919419634196?text=Hello%20Vajra%2C%20I%27d%20like%20to%20book%20a%20room." class="btn btn-primary footer-book" target="_blank" rel="noopener"><i class="fa-solid fa-calendar-check"></i> Book Your Stay</a>
       </div>
       <div>
         <h4 class="f-title">Navigate</h4>
         <ul class="f-links">
           <li><a href="#about">About the Estate</a></li>
           <li><a href="#accommodations">Suites &amp; Cottages</a></li>
-          <li></li>
+          <li><a href="https://wa.me/919419634196?text=Hello%20Vajra%2C%20I%27d%20like%20to%20book%20a%20room." target="_blank" rel="noopener">Book Now</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#experiences">Experiences</a></li>
         </ul>
@@ -555,8 +553,10 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <a href="https://www.google.com/maps/search/?api=1&query=VAJRA+Home+Stay+Hanle" target="_blank" rel="noopener" class="map-link"><i class="fa-solid fa-diamond-turn-right"></i> Get directions</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=VAJRA+Home+Stay+Hanle" target="_blank" rel="noopener" class="map-link"><i class="fa-solid fa-diamond-turn-right"></i> Get directions</a>
       </div>
+    </div>
+
     <div class="f-bottom">
       <div>&copy; <span id="yr">2026</span> Vajra Homestay. All rights reserved.</div>
       <div class="social">
