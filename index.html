@@ -299,15 +299,9 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   .hero-video{object-position:35% center}
 }
 /* touch screens: no hover, so always show the caption */
-@media (hover:none){
-  .g-over{
-    opacity:1;
-    justify-content:flex-end;
-    background:linear-gradient(transparent 50%,rgba(10,20,15,.85));
-    padding:1rem;
-  }
-  .g-over h5{font-size:1rem}
-}
+.g-item.show .g-over{opacity:1}
+.g-item.show img{transform:scale(1.08)}
+.g-item{cursor:pointer;-webkit-tap-highlight-color:transparent}
 
 </style>
 </style>
@@ -614,6 +608,18 @@ const cio=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)retur
   const t0=performance.now();(function f(t){const k=Math.min((t-t0)/1600,1),e=1-Math.pow(1-k,3);el.textContent=(end*e).toFixed(d);if(k<1)requestAnimationFrame(f)})(t0);
 }),{threshold:.6});
 document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+// gallery: tap to show the caption on phones
+const gItems=[...document.querySelectorAll('.g-item')];
+gItems.forEach(item=>{
+  item.addEventListener('click',()=>{
+    const open=item.classList.contains('show');
+    gItems.forEach(i=>i.classList.remove('show'));
+    if(!open)item.classList.add('show');
+  });
+});
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.g-item'))gItems.forEach(i=>i.classList.remove('show'));
+});
 
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
