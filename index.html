@@ -630,7 +630,16 @@ gItems.forEach(item=>{
 document.addEventListener('click',e=>{
   if(!e.target.closest('.g-item'))gItems.forEach(i=>i.classList.remove('show'));
 });
-
+// hide floating buttons while the contact box or footer is on screen
+const floaters=document.querySelectorAll('.wa-float,.sticky-book');
+const zones=[document.getElementById('contact'),document.querySelector('.footer')].filter(Boolean);
+const seen=new Set();
+const fio=new IntersectionObserver(es=>{
+  es.forEach(e=>e.isIntersecting?seen.add(e.target):seen.delete(e.target));
+  const hide=seen.size>0;
+  floaters.forEach(f=>{f.style.opacity=hide?'0':'1';f.style.pointerEvents=hide?'none':'auto'});
+},{threshold:.1});
+zones.forEach(z=>fio.observe(z));
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
