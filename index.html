@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><title>Vajra Homestay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#0f1c16"><title>Vajra Homestay</title>
 <meta name="description" content="Vajra Homestay is a boutique nature retreat with heritage suites, a private plunge-pool villa, farm-to-table meals and guided plantation walks. Book direct for the best rate.">
 <meta property="og:title" content="Vajra Homestay | Luxury Boutique Nature Retreat">
 <meta property="og:description" content="Heritage suites, farm-to-table meals and valley views. Book direct.">
@@ -20,7 +20,7 @@
 :root{--primary:#182c23;--primary-light:#244235;--primary-dark:#0f1c16;--accent:#c49a6c;--accent-hover:#b08557;--accent-soft:#f4ece4;--bg:#faf7f2;--surface:#fff;--text:#222925;--muted:#5b665f;--border:rgba(24,44,35,.1);--r-sm:4px;--r-md:8px;--r-lg:14px;--sh-sm:0 4px 12px rgba(0,0,0,.05);--sh-md:0 12px 30px rgba(0,0,0,.09);--sh-lg:0 24px 60px rgba(0,0,0,.14);--t:all .35s cubic-bezier(.25,1,.5,1);--serif:'Playfair Display',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--primary-dark);scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);color:var(--text);background:var(--primary-dark);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{text-decoration:none;color:inherit;transition:var(--t)}
 ul{list-style:none}
@@ -103,7 +103,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 .trust i{color:var(--accent)}
 
 /* story */
-.story{padding:6rem 0 7rem}
+.story{padding:6rem 0 7rem;background:var(--bg)}
+.light-band{background:var(--bg)}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center}
 .story-images{position:relative;padding-bottom:2.5rem}
 .story-main{border-radius:var(--r-md);box-shadow:var(--sh-md);aspect-ratio:4/5;object-fit:cover;width:85%}
@@ -170,7 +171,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 .dot.active{background:var(--accent)}
 
 /* gallery */
-.gallery{padding:6.5rem 0}
+.gallery{padding:6.5rem 0;background:var(--bg)}
 .g-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:3rem}
 .g-item{position:relative;height:280px;overflow:hidden;border-radius:var(--r-md)}
 .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
@@ -240,7 +241,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,.15);text-align:center}
 .stats b{display:block;font:600 clamp(2rem,4vw,3rem) var(--serif);color:var(--accent)}
 .stats small{color:#b5c2ba;font-size:.85rem}
-#contact{margin-top:5rem}
+.contact-band{background:var(--bg);padding-top:5rem}
 
 /* floating */
 .wa-float{position:fixed;right:1.2rem;bottom:1.2rem;z-index:900;width:54px;height:54px;border-radius:50%;background:#1f8f4e;color:#fff;font-size:1.7rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-md)}
@@ -305,7 +306,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   .sticky-book{display:block;position:fixed;z-index:890;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom))}
   .sticky-book .btn{padding:.85rem 1.8rem;border-radius:50px;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:.95rem}
   .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
-  .footer{padding-bottom:calc(3rem + env(safe-area-inset-bottom))}
+  .footer{padding-bottom:calc(6rem + env(safe-area-inset-bottom))}
 }
 </style>
 </head>
@@ -363,14 +364,14 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   <a href="#about" class="scroll-cue" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
 </section>
 
-<div class="container">
+<div class="light-band"><div class="container">
   <div class="trust">
     <span><i class="fa-solid fa-star"></i> 4.9 guest rating</span>
     <!--<span><i class="fa-solid fa-rotate-left"></i> Free cancellation</span>-->
     <span><i class="fa-solid fa-tag"></i> Best rate when you book direct</span>
     <span><i class="fa-solid fa-mug-hot"></i> Breakfast and Dinner included</span>
   </div>
-</div>
+</div></div>
 
 <section class="story" id="about">
   <div class="container story-grid">
@@ -502,7 +503,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   </div>
 </section>
 
-<div class="container" id="contact">
+<div class="contact-band"><div class="container" id="contact">
   <div class="cta reveal">
     <div><h3>Ready to Plan Your Escape?</h3><p>Book directly for complimentary breakfast, early check-in and our best-rate promise.</p></div>
     <div class="cta-btns">
@@ -510,7 +511,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
       <a href="tel:+918899936224" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Call Concierge</a>
     </div>
   </div>
-</div>
+</div></div>
 
 <footer class="footer">
   <div class="container">
@@ -563,7 +564,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 </footer>
 
 <a href="https://wa.me/9419634196" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-<div class="sticky-book"><a href="#contact" class="btn btn-primary">Book Now</a></div><div class="toast" id="toast" role="status"></div>
+<div class="toast" id="toast" role="status"></div>
 <script>
 // header state
 const navbar=document.getElementById('navbar');
@@ -623,16 +624,6 @@ gItems.forEach(item=>{
 document.addEventListener('click',e=>{
   if(!e.target.closest('.g-item'))gItems.forEach(i=>i.classList.remove('show'));
 });
-// hide floating buttons while the contact box or footer is on screen
-const floaters=document.querySelectorAll('.wa-float,.sticky-book');
-const zones=[document.getElementById('contact'),document.querySelector('.footer')].filter(Boolean);
-const seen=new Set();
-const fio=new IntersectionObserver(es=>{
-  es.forEach(e=>e.isIntersecting?seen.add(e.target):seen.delete(e.target));
-  const hide=seen.size>0;
-  floaters.forEach(f=>{f.style.opacity=hide?'0':'1';f.style.pointerEvents=hide?'none':'auto'});
-},{threshold:.1});
-zones.forEach(z=>fio.observe(z));
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
