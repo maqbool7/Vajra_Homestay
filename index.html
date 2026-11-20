@@ -290,9 +290,18 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .stats{grid-template-columns:repeat(2,1fr)}
 }
 @media(prefers-reduced-motion:reduce){
-*,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-.reveal{opacity:1;transform:none}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
 }
+@media(max-width:768px){
+  .g-item .g-overlay,
+  .g-item .g-caption{
+    opacity:1;
+    visibility:visible;
+    transform:none;
+  }
+}
+</style>
 </style>
 </head>
 <body>
