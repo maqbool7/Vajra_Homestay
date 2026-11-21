@@ -62,7 +62,6 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 
 /* hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--primary-dark);padding:8rem 0 8rem;color:#fff}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero .container{position:relative;z-index:2}
 .hero-content{text-align:center;max-width:860px;margin:0 auto}
 .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:.45rem 1.25rem;border-radius:50px;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;backdrop-filter:blur(8px);color:var(--accent-soft)}
@@ -292,11 +291,6 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 .reveal{opacity:1;transform:none}
 }
-/* phone: show the best part of the video */
-@media(max-width:768px){
-  .hero{min-height:88svh}
-  .hero-video{object-position:35% center}
-}
 /* touch screens: no hover, so always show the caption */
 .g-item.show .g-over{opacity:1}
 .g-item.show img{transform:scale(1.08)}
@@ -309,6 +303,9 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
   .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
   .footer{padding-bottom:calc(6rem + env(safe-area-inset-bottom))}
 }
+@media(max-width:768px){
+  .hero{min-height:88svh;background-position:center}
+}  
 </style>
 </head>
 <body>
@@ -346,10 +343,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 </nav>
 
 <section class="hero" id="home">
-  <video class="hero-video" autoplay muted loop playsinline preload="metadata"
-         poster="static/photo10.png">
-  </video>
-
+  background:var(--primary-dark) url("static/photo10.png") center/cover no-repeat;
   <div class="container">
     <div class="hero-content">
       <!--<div class="hero-badge"><i class="fa-solid fa-gem"></i> Sanctuary of Serenity &amp; Heritage</div>-->
