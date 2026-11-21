@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#0f1c16"><title>Vajra Homestay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f1c16">
+<title>Vajra Homestay</title>
 <meta name="description" content="Vajra Homestay is a boutique nature retreat with heritage suites, a private plunge-pool villa, farm-to-table meals and guided plantation walks. Book direct for the best rate.">
 <meta property="og:title" content="Vajra Homestay | Luxury Boutique Nature Retreat">
 <meta property="og:description" content="Heritage suites, farm-to-table meals and valley views. Book direct.">
@@ -14,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Vajra Homestay","description":"Boutique nature retreat with heritage suites and farm-to-table dining.","email":"reservations@vajarahomestay.com","telephone":"+91-00000-00000","priceRange":"$$$"}
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Vajra Homestay","description":"Boutique nature retreat with heritage suites and farm-to-table dining.","email":"thaey2k8@gmail.com","telephone":"+91-94196-34196","priceRange":"$$$"}
 </script>
 <style>
 :root{--primary:#182c23;--primary-light:#244235;--primary-dark:#0f1c16;--accent:#c49a6c;--accent-hover:#b08557;--accent-soft:#f4ece4;--bg:#faf7f2;--surface:#fff;--text:#222925;--muted:#5b665f;--border:rgba(24,44,35,.1);--r-sm:4px;--r-md:8px;--r-lg:14px;--sh-sm:0 4px 12px rgba(0,0,0,.05);--sh-md:0 12px 30px rgba(0,0,0,.09);--sh-lg:0 24px 60px rgba(0,0,0,.14);--t:all .35s cubic-bezier(.25,1,.5,1);--serif:'Playfair Display',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif}
@@ -60,9 +62,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 .close-btn{position:absolute;top:1.4rem;right:1.4rem;background:none;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
 .mobile-nav .mobile-book{color:#1a1208;font-family:var(--sans);font-size:1rem;margin-top:.6rem}
 
-/* hero */
-.hero{ ... background:var(--primary-dark) url("static/photo10.png") center/cover no-repeat; ... }  <div class="container">  
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--primary-dark);padding:8rem 0 8rem;color:#fff}
+/* hero (background image) */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--primary-dark) url("static/photo10.png") center/cover no-repeat;padding:8rem 0 8rem;color:#fff}
 .hero .container{position:relative;z-index:2}
 .hero-content{text-align:center;max-width:860px;margin:0 auto}
 .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:.45rem 1.25rem;border-radius:50px;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;backdrop-filter:blur(8px);color:var(--accent-soft)}
@@ -72,12 +73,10 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 .scroll-cue{position:absolute;bottom:5.5rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-size:1.1rem;animation:bob 2s ease-in-out infinite;z-index:2}
 @keyframes bob{50%{transform:translate(-50%,8px)}}
 
-/* readable text over the bright video */
-/* soft dark glow behind the text only (video stays bright at the edges) */
+/* readable text over the photo */
+/* soft dark glow behind the text only (photo stays bright at the edges) */
 .hero::before{content:'';position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 58% 52% at 50% 50%,rgba(8,18,13,.62),rgba(8,18,13,.25) 55%,transparent 80%)}
-.hero-title{color:#f4ece4;font-weight:700;text-shadow:0 2px 4px rgba(17, 17, 15, 0.45),0 6px 30px rgba(0,0,0,.6)}
-.hero-desc{color:#f4ece4;font-weight:400;text-shadow:0 1px 3px rgba(11, 11, 14, 0.6),0 3px 18px rgba(0,0,0,.6)}
-.hero-title{color:#f4ece4;font-weight:700;text-shadow:0 2px 3px rgba(16, 16, 15, 0.55),0 4px 14px rgba(4, 4, 4, 0.45)}
+.hero-title{color:#f4ece4;font-weight:700;text-shadow:0 2px 3px rgba(16,16,15,.55),0 4px 14px rgba(4,4,4,.45)}
 .hero-desc{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.65),0 2px 10px rgba(0,0,0,.5)}
 .btn-ghost:hover{background:rgba(255,255,255,.2)}
 .header{background:linear-gradient(rgba(0,0,0,.55),transparent)}
@@ -155,7 +154,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25}
 .reviews {
   background:
     linear-gradient(rgba(18, 33, 27, 0.94), rgba(24,44,35,.94)),
-    url("static/gallery1.jpeg") center/cover;  padding: 6.5rem 0;
+    url("static/gallery1.jpeg") center/cover;
+  padding: 6.5rem 0;
   color: #c49a6c;
   text-align: center;
 }
@@ -221,6 +221,8 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .f-map iframe{width:100%;height:100%;border:0}
 .map-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:.9rem;color:var(--accent);font-weight:600;font-size:.88rem}
 .map-link:hover{color:#fff}
+.review-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.2rem;border:1px solid rgba(196,154,108,.55);border-radius:50px;color:var(--accent);font-weight:600;font-size:.85rem}
+.review-btn:hover{background:var(--accent);color:#1a1208}
 
 /* day at vajra */
 .day{padding:6.5rem 0 7rem;background:var(--primary);color:#fff}
@@ -245,7 +247,6 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 
 /* floating */
 .wa-float{position:fixed;right:1.2rem;bottom:1.2rem;z-index:900;width:54px;height:54px;border-radius:50%;background:#1f8f4e;color:#fff;font-size:1.7rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-md)}
-.sticky-book{display:none}
 .toast{position:fixed;left:50%;bottom:1.5rem;transform:translate(-50%,150%);background:var(--primary);color:#fff;padding:.9rem 1.4rem;border-radius:var(--r-md);box-shadow:var(--sh-lg);z-index:2000;transition:var(--t);max-width:90vw;font-size:.9rem}
 .toast{visibility:hidden;opacity:0}
 .toast.show{transform:translate(-50%,0);visibility:visible;opacity:1}
@@ -279,7 +280,6 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 .booking-grid{grid-template-columns:1fr}
 .booking-grid .btn{grid-column:auto}
 .scroll-cue{display:none}
-.footer{padding-bottom:6rem}
 }
 @media(max-width:768px){
 .panels{flex-direction:column;height:640px}
@@ -292,21 +292,17 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 .reveal{opacity:1;transform:none}
 }
-/* touch screens: no hover, so always show the caption */
+/* tap a gallery photo to show its caption (works on phones) */
 .g-item.show .g-over{opacity:1}
 .g-item.show img{transform:scale(1.08)}
 .g-item{cursor:pointer;-webkit-tap-highlight-color:transparent}
-  
-.wa-float,.sticky-book{transition:opacity .3s}
-@media(max-width:768px){
-  .sticky-book{display:block;position:fixed;z-index:890;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom))}
-  .sticky-book .btn{padding:.85rem 1.8rem;border-radius:50px;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:.95rem}
-  .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
-  .footer{padding-bottom:calc(6rem + env(safe-area-inset-bottom))}
-}
+
+/* phone */
 @media(max-width:768px){
   .hero{min-height:88svh;background-position:center}
-}  
+  .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
+  .footer{padding-bottom:calc(4rem + env(safe-area-inset-bottom))}
+}
 </style>
 </head>
 <body>
@@ -344,6 +340,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
 </nav>
 
 <section class="hero" id="home">
+  <div class="container">
     <div class="hero-content">
       <!--<div class="hero-badge"><i class="fa-solid fa-gem"></i> Sanctuary of Serenity &amp; Heritage</div>-->
       <h1 class="hero-title">Experience Nature and Comfort at Vajra</h1>
@@ -397,35 +394,35 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
     <div class="rooms-grid">
       <article class="room reveal">
         <div class="room-img"><span class="room-badge">Most Popular</span>
-         <img src="static/room12.png" alt="Bedroom of the Verandah Heritage Suite" width="800" height="540" loading="lazy"></div>
+         <img src="static/room12.png" alt="Bedroom of the Cozy Wooden Room" width="800" height="540" loading="lazy"></div>
         <div class="room-body">
           <div class="room-meta"><span><i class="fa-solid fa-maximize"></i> 156 sq ft</span><span><i class="fa-solid fa-user"></i> 3 guests</span><span><i class="fa-solid fa-mountain-sun"></i> Valley view</span></div>
           <h3>The Cozy Wooden Room</h3>
           <p>Warm wood-paneled walls, a double and single bed, and heavy winter blankets. Ideal for families or friends.</p>
           <div class="chips" aria-label="Includes"><i class="fa-solid fa-wifi" title="Wi-Fi"></i><i class="fa-solid fa-mug-hot" title="Breakfast"></i><i class="fa-solid fa-utensils" title="Dinner"></i></div>
-          <div class="room-foot"><div class="price"> <small></small></div><a href="#contact" class="room-link" aria-label="Book the Verandah Heritage Suite">Book now <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="room-foot"><div class="price"> <small></small></div><a href="#contact" class="room-link" aria-label="Book the Cozy Wooden Room">Book now <i class="fa-solid fa-arrow-right"></i></a></div>
         </div>
       </article>
       <article class="room reveal">
         <div class="room-img"><span class="room-badge">Exclusive</span>
-          <img src="static/room14.png" alt="Living area of the Emerald Canopy Villa" width="800" height="540" loading="lazy"></div>
+          <img src="static/room14.png" alt="Living area of the Valley View Triple Room" width="800" height="540" loading="lazy"></div>
         <div class="room-body">
           <div class="room-meta"><span><i class="fa-solid fa-maximize"></i> 156 sq ft</span><span><i class="fa-solid fa-user"></i> 3 guests</span><span><i class="fa-solid fa-mountain-sun"></i> Valley view</span></div>
           <h3>The Valley View Triple Room</h3>
           <p>Wake up to scenic mountain views. Features warm wooden walls, carpeted floors, and cozy bedding for three.</p>
           <div class="chips" aria-label="Includes"><i class="fa-solid fa-wifi" title="Wi-Fi"></i><i class="fa-solid fa-mug-hot" title="Breakfast"></i><i class="fa-solid fa-utensils" title="Dinner"></i></div>
-          <div class="room-foot"><div class="price"> <small></small></div><a href="#contact" class="room-link" aria-label="Book the Emerald Canopy Villa">Book now <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="room-foot"><div class="price"> <small></small></div><a href="#contact" class="room-link" aria-label="Book the Valley View Triple Room">Book now <i class="fa-solid fa-arrow-right"></i></a></div>
         </div>
       </article>
       <article class="room reveal">
         <div class="room-img"><span class="room-badge">Spacious</span>
-          <img src="static/room15.png" alt="Exterior of the Celestial Courtyard Cottage" width="800" height="540" loading="lazy"></div>
+          <img src="static/room15.png" alt="The Spacious Family Triple room" width="800" height="540" loading="lazy"></div>
         <div class="room-body">
           <div class="room-meta"><span><i class="fa-solid fa-maximize"></i> 156 sq ft</span><span><i class="fa-solid fa-user"></i> 3 guests</span><span><i class="fa-solid fa-mountain-sun"></i> Valley view</span></div>
           <h3>The Spacious Family Triple</h3>
           <p>Our largest wooden room with extra luggage space, a double + single bed, and heavy winter blankets.</p>
           <div class="chips" aria-label="Includes"><i class="fa-solid fa-wifi" title="Wi-Fi"></i><i class="fa-solid fa-mug-hot" title="Breakfast"></i><i class="fa-solid fa-utensils" title="Dinner"></i></div>
-          <div class="room-foot"><div class="price"> <small></small></div><a href="#contact" class="room-link" aria-label="Book the Celestial Courtyard Cottage">Book now <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="room-foot"><div class="price"> <small></small></div><a href="#contact" class="room-link" aria-label="Book the Spacious Family Triple">Book now <i class="fa-solid fa-arrow-right"></i></a></div>
         </div>
       </article>
     </div>
@@ -437,9 +434,9 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
     <div class="slides" id="slides" aria-live="polite">
       <div class="slide"><p class="quote">“My stay at VAJRA Home Stay Hanle was truly fantastic!  The location is beautiful, and the atmosphere was so welcoming. I had a wonderful experience and would definitely return.”</p><div class="who">Guest Review</div><div class="where">Piyush Bhatt</div></div>
-      <div class="slide active"><p class="quote">“I had a pleasant stay at this homestay. The host was incredibly friendly, welcoming, and always willing to help. They could communicate well in English, which made everything much easier for international travelers.”</p><div class="who">Guest Review</div><div class="who">Yen Thanh</div></div>
+      <div class="slide active"><p class="quote">“I had a pleasant stay at this homestay. The host was incredibly friendly, welcoming, and always willing to help. They could communicate well in English, which made everything much easier for international travelers.”</p><div class="who">Guest Review</div><div class="where">Yen Thanh</div></div>
       <div class="slide"><p class="quote">“I had a wonderful experience staying at this homestay. The room was spotless, comfortable, and beautifully decorated. The host was very welcoming and always ready to offer helpful suggestions and local tips. I would highly recommend this place to anyone planning to visit the area.”</p><div class="who">Guest Review</div><div class="where">Masher Khursheed</div></div>
-       <div class="slide"><p class="quote">“It's so hard to believe that one can get this much luxury at such an affordable price somewhere around hanle as a remote area.”</p><div class="who">Guest Review</div><div class="where">Sayan Mandal</div></div>
+      <div class="slide"><p class="quote">“It's so hard to believe that one can get this much luxury at such an affordable price somewhere around hanle as a remote area.”</p><div class="who">Guest Review</div><div class="where">Sayan Mandal</div></div>
     </div>
     <div class="dots" id="dots"></div>
   </div>
@@ -467,7 +464,7 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
     </div>
     <div class="panels" id="panels">
       <article class="panel active" tabindex="0">
-        <img src="static/photo5.png"alt="Under a Sky Full of Stars" loading="lazy" width="900" height="1100">
+        <img src="static/photo5.png" alt="Under a Sky Full of Stars" loading="lazy" width="900" height="1100">
         <div class="panel-body"><span class="panel-time"><i class="fa-solid fa-star"></i>..</span><h3>Night Sky Experience</h3><p>Gaze at the Milky Way above Vajra, breathe in the peaceful night air, and enjoy the quiet beauty of nature beneath a sky full of stars.</p></div>
       </article>
       <article class="panel" tabindex="0">
@@ -528,7 +525,6 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
         <div class="c-item"><i class="fa-solid fa-envelope"></i><a href="mailto:thaey2k8@gmail.com">thaey2k8@gmail.com</a></div>
         <div class="c-item"><i class="fa-solid fa-phone"></i><a href="tel:+919419634196">+91 9419634196</a></div>
         <div class="c-item"><i class="fa-solid fa-phone"></i><a href="tel:+918899936224">+91 8899936224</a></div>
-
       </div>
       <div>
         <h4 class="f-title">Find Us</h4>
@@ -540,17 +536,20 @@ details p{margin-top:.7rem;color:var(--muted);font-size:.92rem}
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=VAJRA+Home+Stay+Hanle" target="_blank" rel="noopener" class="map-link"><i class="fa-solid fa-diamond-turn-right"></i> Get directions</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=VAJRA+Home+Stay+Hanle" target="_blank" rel="noopener" class="map-link"><i class="fa-solid fa-diamond-turn-right"></i> Get directions</a>
       </div>
+    </div>
+
     <div class="f-bottom">
       <div>&copy; <span id="yr">2026</span> Vajra Homestay. All rights reserved.</div>
       <a href="https://www.google.com/maps/place/VAJRA+Home+Stay+Hanle/@32.767824,78.914266,17z/data=!4m18!1m9!3m8!1s0x3900c50008b99453:0x8455b7bbbfa00893!2sVAJRA+Home+Stay+Hanle!8m2!3d32.7678239!4d78.9142655!9m1!1b1!16s%2Fg%2F11wr6nlm6j!3m7!1s0x3900c50008b99453:0x8455b7bbbfa00893!8m2!3d32.7678239!4d78.9142655!9m1!1b1!16s%2Fg%2F11wr6nlm6j?hl=en&entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="review-btn">
-       <i class="fa-brands fa-google"></i> Leave a Google Review
-     </a>
+        <i class="fa-brands fa-google"></i> Leave a Google Review
+      </a>
+    </div>
   </div>
 </footer>
 
-<a href="https://wa.me/9419634196" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://wa.me/919419634196" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <div class="toast" id="toast" role="status"></div>
 <script>
 // header state
@@ -599,6 +598,7 @@ const cio=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)retur
   const t0=performance.now();(function f(t){const k=Math.min((t-t0)/1600,1),e=1-Math.pow(1-k,3);el.textContent=(end*e).toFixed(d);if(k<1)requestAnimationFrame(f)})(t0);
 }),{threshold:.6});
 document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
 // gallery: tap to show the caption on phones
 const gItems=[...document.querySelectorAll('.g-item')];
 gItems.forEach(item=>{
@@ -611,6 +611,7 @@ gItems.forEach(item=>{
 document.addEventListener('click',e=>{
   if(!e.target.closest('.g-item'))gItems.forEach(i=>i.classList.remove('show'));
 });
+
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
